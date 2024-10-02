@@ -1,0 +1,456 @@
+/* Cấu trúc chung của website */
+* {
+  box-sizing: border-box;
+}
+/* Tạo biến màu  */
+:root {
+  --header-bg: #0d3c68;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.2rem;
+}
+/* =====code chung===== */
+.container {
+  width: 1370px;
+  margin: 0 auto;
+}
+/* =====code phần header__top===== */
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #a3cef7;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  font-size: 2rem;
+  list-style-type: none;
+}
+.nav__list .list__link {
+  text-decoration: none;
+  padding: 10px;
+  color: #ffffff;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.list__link:hover {
+  background-color: aquamarine;
+  color: #000000;
+  transform: scale(1.1);
+}
+/* code phần nút bấm */
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  min-width: 100px;
+  line-height: 60px;
+  border-radius: 30px;
+  background: aquamarine;
+  /* style của chử */
+  color: #302b2b;
+  text-align: center;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.3;
+  padding: 5px 20px;
+}
+.header__btn .btn {
+  align-self: center;
+  width: 150px;
+  color: black;
+}
+/* code phần header__bottom */
+.header__bottom {
+  height: 700px;
+  padding: 200px 0;
+  background-color: #ddf1f0;
+  background-size: cover;
+  background-image: url("../img/class01.jpg");
+}
+.header__bottom .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+.bottom__img {
+  border: 3px solid #fff;
+  border-radius: 10px;
+  width: 400px;
+  height: 300px;
+  transition: 0.5s;
+  box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+}
+.bottom__img:hover,
+.bottom__content:hover {
+  border: 5px solid rgb(58, 237, 240);
+  transform: scale(1.1);
+  box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.5);
+}
+.bottom__content {
+  border: 3px solid #ffffff;
+  justify-content: space-between;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  width: 700px;
+  padding: 20px 0 20px 0;
+  transition: 0.5s;
+}
+.content__heading {
+  font-family: "Times New Roman", Times, serif;
+  color: #2e80ce;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+}
+.content__heading2 {
+  font-family: "Times New Roman", Times, serif;
+  color: #000000;
+  font-size: 3rem;
+  font-weight: 550;
+  line-height: normal;
+}
+.content__desc {
+  color: #000000;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 550;
+  line-height: 1.5;
+  margin: 0;
+}
+/* =====================================phần main====================================== */
+/* code phần main__item1 */
+.main__item {
+  padding-top: 130px;
+}
+.item__content {
+  text-align: center;
+  margin: 50px auto;
+  background-color: rgb(205, 248, 234);
+  width: 600px;
+  height: auto;
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.main__item1 .content__desc {
+  color: #000;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.85;
+}
+.item__card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card__img {
+  width: 266px;
+  height: 150px;
+  border-radius: 16px 16px 0 0;
+  object-fit: cover;
+  cursor: pointer;
+}
+.card {
+  border: 2px solid rgb(255, 255, 255);
+  width: 270px;
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+.card:hover {
+  transform: scale(1.2);
+  border: 2px solid aqua;
+  box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.4);
+}
+.card__content {
+  height: 147px;
+  padding: 15px;
+  background-color: #e2e6ea;
+  border-radius: 0 0 16px 16px;
+}
+.card__heading {
+  width: 224px;
+  color: #10375c;
+  font-family: Sora;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.625;
+  padding-bottom: 5px;
+}
+.card__desc {
+  color: #575f66;
+  width: 226px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.71;
+}
+.item__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 70px;
+  gap: 50px;
+}
+.btn__item {
+  background-color: #2e80ce;
+  color: #fff;
+  transition: 0.5s;
+}
+.item1,
+.item2 {
+  transition: 0.5;
+}
+.item1:hover {
+  transform: translateX(-30px) scale(1.2);
+}
+.item2:hover {
+  transform: translateX(30px) scale(1.2);
+}
+/* Card item2 */
+.main__item-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main__item-content .item__card {
+  display: inline-block;
+}
+.card__df {
+  display: flex;
+  padding: 15px;
+  gap: 30px;
+}
+.img__content {
+  margin-bottom: 30px;
+  border-radius: 15px;
+}
+.item__card-content {
+  display: flex;
+}
+.item__card-content .item__btn {
+  padding-top: 10px;
+  order: 1;
+  display: inline-grid;
+  align-content: center;
+}
+.item__card-content .item1:hover {
+  transform: scale(1.2);
+}
+.item__card-content .item2:hover {
+  transform: scale(1.2);
+}
+.item__card-content .item__card {
+  order: 2;
+}
+/* Code phàn tkb */
+.time__table {
+  text-align: center;
+  position: relative;
+  background-color: rgb(227, 248, 255);
+  height: 700px;
+  left: 0;
+}
+.table__desc {
+  font-size: 4rem;
+  content: "";
+  position: absolute;
+  left: 40%;
+  right: 40%;
+  top: 5%;
+  border: 2px solid black;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgb(205, 248, 234);
+  color: #2e80ce;
+  line-height: 1.3;
+}
+.time__table .container {
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 250px;
+  border-radius: 10px;
+  height: 550px;
+}
+.table__thu {
+  margin: 25px;
+  border-radius: 15px;
+  padding: 10px;
+  border: 3px solid #ffffff;
+  backdrop-filter: blur(15px);
+  box-sizing: border-box;
+  transition: 0.5s;
+  background-color: #a3cef7;
+}
+.table__thu:hover {
+  border: 3px solid rgb(0, 0, 0);
+  box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+  transform: scale(1.1);
+}
+.mon {
+  border: 2px solid aquamarine;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px 0;
+  transition: 0.5s;
+}
+.mon:hover {
+  background-color: aquamarine;
+  border: 2px solid #000000;
+  transform: scale(1.1);
+}
+/* ==code phần album== */
+.album__card {
+  display: flex;
+  justify-content: space-between;
+}
+.album__card-once,
+.album__card-two,
+.album__card-three {
+  width: 30%;
+}
+.album__content {
+  background-color: rgb(205, 248, 234);
+  width: 600px;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-bottom: 70px;
+  border: 2px solid black;
+}
+.album__heading {
+  font-size: 5rem;
+  text-align: center;
+  color: #2e80ce;
+  margin-bottom: 10px;
+}
+.album__desc {
+  font-size: 3rem;
+  text-align: center;
+  color: #000000;
+}
+.album__card-heading {
+  color: #2e80ce;
+  font-size: 3rem;
+  text-align: center;
+}
+.album__card-desc {
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  text-align: center;
+}
+.album__card-item {
+  margin-top: 30px;
+  position: relative;
+}
+.album__card-content {
+  background-color: rgb(205, 248, 234);
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
+}
+.card-item__img {
+  width: 100%;
+  height: auto;
+  border: 2px solid rgb(180, 231, 248);
+  border-radius: 10px;
+}
+.album-download__img {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 45%;
+  bottom: 50%;
+  right: 50%;
+  opacity: 0;
+  transition: 0.5s;
+}
+.album__card-item:hover .album-download__img {
+  opacity: 1;
+}
+.download__img {
+  width: 50px;
+  height: 50px;
+}
+.time__table-btn {
+  font-size: 2.5rem;
+  transition: 0.5s;
+}
+.time__table-btn:hover {
+  background-color: aquamarine;
+  transform: scale(1.1);
+  color: #000000;
+}
+/* ===========Code phần footer========== */
+.footer {
+  background-color: #aed4f8;
+  margin-top: 150px;
+  height: 350px;
+}
+.footer__class-logo {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  height: 350px;
+}
+.footer__logo {
+  width: 70%;
+  height: auto;
+  border-radius: 15px;
+}
+/* code phần liên hệ */
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__content {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__heading {
+  font-family: "Times New Roman", Times, serif;
+  color: #10375c;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: normal;
+}
+.footer__desc,
+.footer__phone {
+  color: #000000;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 550;
+  line-height: 1.75;
+}
+.class__school-internet {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.class-icon {
+  width: 50px;
+  height: 50px;
+}
