@@ -5,6 +5,7 @@
 /* Tạo biến màu  */
 :root {
   --header-bg: #0d3c68;
+  --bg: rgb(205, 248, 234);
 }
 html {
   font-size: 62.5%;
@@ -453,4 +454,225 @@ body {
 .class-icon {
   width: 50px;
   height: 50px;
+}
+/* =============================================================================================================================================== */
+
+/*===========code phần rèn luyện lớp học=========== */
+
+.renluyen-item__content {
+  margin-top: 100px;
+  width: 800px;
+  margin-bottom: -30px;
+}
+.renluyen .item__btn {
+  margin-bottom: 50px;
+}
+.renluyen__btn {
+  transition: 0.3s;
+}
+.renluyen__btn:hover {
+  transform: scaleX(1.1);
+  background-color: aquamarine;
+}
+/* code phần bảng thi đua của trường */
+.renluyen__table {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  border-spacing: 10px;
+  margin-top: 30px;
+  background-color: #f7fafc;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #9dc7ee;
+}
+.renluyen__table .title__content {
+  transition: 0.5s;
+  font-size: 3rem;
+  background-color: #9dc7ee;
+}
+.renluyen__content-title {
+  margin: 0 auto;
+  width: 800px;
+  text-align: center;
+  padding: 15px;
+  background-color: aquamarine;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.title__list {
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.title__content:hover {
+  background-color: #9dc7ee;
+  color: black;
+  transform: scale(1.1);
+}
+.heading__list {
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.title__content-heading {
+  transition: 0.5s;
+}
+.title__content-heading:hover {
+  background-color: var(--bg);
+  transform: scale(1.1);
+}
+/* Coded phần thi đua từng tổ */
+.thidua__group .item__card {
+  margin-top: 80px;
+}
+.thidua__group-title {
+  margin-top: 100px;
+  width: 500px;
+}
+.heading__list {
+  transition: 0.5s;
+}
+.heading__list:hover {
+  transform: scale(1.1);
+  background-color: #9dc7ee;
+  color: #ffff;
+  border: 2px solid rgb(255, 0, 0);
+}
+/* code phần thi dua lớp */
+.thidua__table-content {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: aliceblue;
+  padding: 20px;
+  margin-top: 40px;
+  border: 2px solid var(--header-bg);
+  border-radius: 10px;
+  border-spacing: 10px;
+}
+.thidua__table .title {
+  font-size: 3rem;
+  background-color: #9dc7ee;
+  transition: 0.5s;
+}
+.thidua__table .title:hover {
+  scale: 1.1;
+}
+.item__desc-title {
+  font-size: 2.5rem;
+  padding: 10px;
+  background-color: var(--bg);
+  border: 2px solid black;
+  border-radius: 10px;
+  font-weight: 500;
+}
+.item__desc {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.8;
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.item__desc:hover,
+.end__desc:hover {
+  background-color: aquamarine;
+  border-color: red;
+}
+.item__heading,
+.end__desc {
+  transition: 0.5s;
+}
+.item__heading:hover {
+  background-color: #9dc7ee;
+  transform: scale(1.1);
+}
+/*==========code phần khen thưởng=========== */
+.khenthuong__content,
+.khenthuong__card-item {
+  display: flex;
+  justify-content: space-between;
+}
+.khenthuong__class,
+.khenthuong__school {
+  width: 45%;
+  height: auto;
+  padding: 20px;
+}
+/* tiêu đề khen thưởng */
+.khenthuong__title {
+  text-align: center;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: aliceblue;
+  margin-bottom: 50px;
+  color: black;
+}
+.khenthuong__title-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+  margin: 0;
+  color: #2e80ce;
+}
+.khenthuong__title-desc {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin: 0;
+  font-weight: 600;
+}
+/* Code phần card-item của khen thưởng */
+.class__card-item {
+  width: 45%;
+  align-items: center;
+  background-color: rgb(200, 229, 255);
+  height: auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.class__card-item:hover {
+  background-color: var(--bg);
+  scale: 1.15;
+  border: 2px solid white;
+}
+.class__item-img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+.class__item-heading {
+  padding: 15px;
+}
+.khenthuong__btn {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.khenthuong__item-heading {
+  font-size: 2rem;
+  margin: 0;
+  color: var(--header-bg);
+}
+.khenthuong__item-desc {
+  font-size: 1.5rem;
+  color: rgb(62, 61, 61);
+}
+.khenthuong__content .item__btn {
+  padding-top: 0px;
+  margin-bottom: 60px;
+}
+/* ==========code khối kỉ luật =========== */
+.kiluat__btn {
+  margin-top: -70px;
+}
+.kiluat__card {
+  margin-top: 40px;
 }
